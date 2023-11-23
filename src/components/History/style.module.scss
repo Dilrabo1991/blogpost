@@ -1,0 +1,63 @@
+.historyWrp {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 32px;
+    overflow: hidden;
+
+}
+
+.gredientLineWrp {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(rgba(255, 208, 107, 1), rgba(252, 77, 130, 1));
+    border-radius: 50%;
+}
+
+.gredientLineWrp.viewed {
+    background-color: grey;
+    background-image: none;
+}
+
+.gredientLine {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+
+
+
+    & img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        display: block;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+
+}
+
+.title {
+    color: #222;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+
+}
+
+.historyBoxs {
+    margin-top: 51px;
+}
+
+@media screen and (max-width:1055px) {
+    .historyWrp {
+        overflow: hidden;
+        gap: 14px;
+    }
+}
